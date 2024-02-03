@@ -6,4 +6,9 @@ public class PrendaDeVestir extends Producto{
         super(nombre,precio,cantidad);
         this.talla = talla;
     }
+
+    public void impresionLista(){
+        super.impresionLista();
+        System.out.println("La talla es " +talla);
+    }
 }

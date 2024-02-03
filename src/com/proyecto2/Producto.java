@@ -35,4 +35,8 @@ public class Producto {
     public void setCantidad(int cantidad) {
         this.cantidad = cantidad;
     }
+
+    public void impresionLista() {
+        System.out.println("El producto es " +nombre + ".\nEl precio es " +precio + ".\nLa cantidad es " +cantidad);
+    }
 }

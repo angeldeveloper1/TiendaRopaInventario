@@ -8,4 +8,9 @@ public class Accesorio extends Producto{
         this.tipoAccesorio = tipoAccesorio;
     }
 
+    public void impresionLista(){
+        super.impresionLista();
+        System.out.println("El tipo de accesorio es " +tipoAccesorio);
+    }
+
 }
