@@ -7,10 +7,4 @@ public class Accesorio extends Producto{
         super(nombre,precio,cantidad);
         this.tipoAccesorio = tipoAccesorio;
     }
-
-    public void impresionLista(){
-        super.impresionLista();
-        System.out.println("El tipo de accesorio es " +tipoAccesorio);
-    }
-
 }

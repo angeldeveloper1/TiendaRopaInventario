@@ -4,19 +4,24 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Producto[] prod = new Producto[5];
-        prod[0] = new Accesorio("Aretes",7.99,20,"Aro");
-        prod[1] = new PrendaDeVestir("Camiseta",10.99,15,36);
-        prod[2] = new Accesorio("Collar",20.99,10,"Colgante");
-        prod[3] = new PrendaDeVestir("Pantalon",34.99,10,28);
-        prod[4] = new PrendaDeVestir("Boxer",8.99,30,32);
+        Accesorio aretes = new Accesorio("Aretes",7.99,20,"Aro");
+        PrendaDeVestir camiseta = new PrendaDeVestir("Camiseta",10.99,15,36);
+        Accesorio collar = new Accesorio("Collar",20.99,10,"Colgante");
+        PrendaDeVestir pantalon = new PrendaDeVestir("Pantalon",34.99,10,28);
+        PrendaDeVestir boxer = new PrendaDeVestir("Boxer",8.99,30,32);
 
-        for (Producto producto : prod){
-            producto.impresionLista();
-            System.out.println("\n");
-        }
+        Tienda tienda = new Tienda();
+
+        tienda.agregarProducto(aretes);
+        tienda.agregarProducto(camiseta);
+        tienda.agregarProducto(collar);
+        tienda.agregarProducto(pantalon);
+        tienda.agregarProducto(boxer);
+
+        tienda.imprimirInventario();
+        System.out.println("\n");
+        tienda.imprimirCantidad();
 
 
     }
-
 }
